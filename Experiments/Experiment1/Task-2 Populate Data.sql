@@ -1,7 +1,3 @@
-# 24BCS11254_MAHI_DBMS
-
-//Experiment - 1 
-
 --Complete the queries below to insert data into the tables & retrieving the first records from the first 3 tables.
 
 -- Inserting Data into Doctors Table
