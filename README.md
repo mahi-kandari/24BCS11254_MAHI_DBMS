@@ -45,5 +45,31 @@ SELECT * FROM Appointments
 LIMIT 1;
 
 
+//Experiment - 2.1
+
+-- Write a query using union to stack the table 'Arts' over 'Science' and output the final table 
+
+select * from Arts union select * from Science;
+
+//Experiment - 2.2
+
+-- Write a query to output a single table with the names of employees in both  the table 'employee' and 'pt_employee'.
+Employee names are added on the field emp_name in both the tables.
+Note: Do not remove the duplicate names while combining both the tables. */
+
+select emp_name from employee union all select emp_name from pt_employee;
+
+//Experiment - 2.3
+
+-- Write a query to find the list of fruits available in the supermarket.
+(f_name column has the name of the fruits and inv_name has the name of inventories, you are suppose to output the name of the fruits.)*/
+select f_name  from fruit intersect select  inv_name from inventory;
+
+
+//Experiment - 2.4
+
+--Write a query to output the name of the fruits (f_name) from the table 'fruit' which are not present in the table  inventory(f_name column has the name of the fruits and inv_name has the name of the items in inventory). */
+
+select f_name from fruit except select inv_name from inventory;
 
 
