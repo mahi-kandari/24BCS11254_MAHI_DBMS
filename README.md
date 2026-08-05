@@ -222,3 +222,12 @@ on p.category_id = c.category_id;
 select c.category_name, p.product_name, p.price from categories as c
 join products as p
 on c.category_id = p.category_id;
+
+# Experiment 5.1
+
+select round(
+(sum(case when cuisine = "American" then price else 0 end)
+/sum(price))*100,2) 
+as American_Revenue
+from orders;
+
