@@ -231,3 +231,8 @@ select round(
 as American_Revenue
 from orders;
 
+# Experiment 5.2
+
+select tweet_id 
+from Tweets
+where length(content) > 15 ; 
