@@ -1,0 +1,3 @@
+select f_name, f_cost, f_type 
+from food 
+where f_cost > (select avg(f_cost) from food );
